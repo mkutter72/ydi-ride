@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="therm.css">
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+
+<body>
+
+<h2 >Welcome to Mike Kutter's YDI Ride Donation Website!!</h2>
+
+ <div class="container" id="allInputs">
+      <form class="form-register" autocomplete="off">
+        <h3 class="form-register-heading" id="buttonTitle">Donation Information</h3>
+
+        <!-- <label for="regInputName" class="sr-only">Name</label> -->
+        <input  id="regInputName" class="form-control" placeholder="Name" required autofocus>
+
+        <input type="email" id="regInputEmail" class="form-control" placeholder="Email address" required >
+
+
+        <div class="input-group">
+          <span class="input-group-addon">$</span>
+          <input type="number" class="form-control" placeholder="Amount" id="regDonorAmount" required >
+        </div>
+
+        <label id="paymentMethod" >Payment Method</label>
+       <div class="dropdown" id="pmDropDown">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenu1">Credit Card
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu" id="mMethodDropDown">
+            <li><a href="#">Credit Card</a></li>
+            <li><a href="#">Check</a></li>
+            <li><a href="#">Giving Fund</a></li>
+          </ul>
+        </div>
+
+
+        <button  id="registerButton" class="btn btn-lg btn-primary btn-block" type="submit">Continue</button>
+      </form>
+  </div> <!-- /container -->
+
+
+  <div class="donation-meter">
+    <strong>My Goal</strong>
+    <strong class="goal">$5000</strong>
+    <span class="glass">
+      <!-- max value is 90 % -->
+      <strong class="total" style="bottom: 76%">$3800</strong>
+      <!-- max value is 97 % -->
+      <span class="amount" style="height: 76%"></span>
+    </span>
+    <div class="bulb">
+      <span class="red-circle"></span>
+      <span class="filler">
+          <span></span>
+      </span>
+    </div>
+  </div>
+
+  <img src="background.jpg" class="bikePic" height="500" width="480">
+
+  <div class="infoText"> Hello! I will be biking from Rockport to Provincetown starting September 28th.  It will be a 3 day ride totaling about 200 miles!  I&#39m doing this ride as a fundraiser for an organization I co-founded, the Yoga Diversity Initiative (YDI).  YDI&#39s mission is to make the practice of yoga more accessible to People of Color in the Boston area.   One of the barriers is the very low number of yoga teachers that are People of Color. YDI is working to address this by providing scholarships for yoga teacher trainings to People of Color.<br><br>
+
+  YDI formed 2 years ago and we have awarded three scholarships so far.  This year we would like to award 2 scholarships
+  so I&#39m trying to raise $5000. It&#39s been exciting to see our program grow and I&#39ve heard so many people in the Boston yoga community say &#34Yes!  We need this.  Thank-you for doing this work&#34
+  <br><br>
+
+  Donations to the ride are tax deductable.  To learn more about YDI visit our website.  Thanks for your support!
+  </div>
+  <button  id="websiteButton" class="btn btn-lg btn-primary btn-block" type="submit">Our Website</button>
+  <button  id="donateButton" class="btn btn-lg btn-primary btn-block" type="submit">Donate</button>
+  <button  id="continueButton" class="btn btn-lg btn-primary btn-block" type="submit">Continue</button>
+
+
+  <script src="bootstrap.min.js"></script>
+  <script src="ydi-ride.js"></script>
+
+</body>
