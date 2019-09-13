@@ -1,7 +1,7 @@
 'use strict';
 
 var currentDonationMode = "Credit Card";
-var goal = 5000;
+var goal = 6000;
 
 
  var callback =  function callback(error, data) {
