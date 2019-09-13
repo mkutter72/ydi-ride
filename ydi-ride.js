@@ -97,15 +97,15 @@ $(document).ready(function () {
 
     if (currentDonationMode === "Credit Card"){
            $(".infoText").empty();
-           $('.infoText').append("Thank-you for donating to the ride. YDI is building a partnership with Trinity Boston Foundation (TBF).  Donations for the ride can be made through TBF and are thereforetax deductible as a donation to a 501(c)(3) organization.            <br><br> Credit Card donations are being collected through the Trinity Boston Foundation website.  Clicking on the Continue button will take you to their site. <br><br><b>IMPORTANT: in the DESIGNATION section on their web donation form, in the Notes field enter YDI RIDE to insure that the Yoga Diversity Initiative is credited with your donation.</b> <br><br>  If have any questions you can contact me at yogadiversityinitiative@gmail.com");
+           $('.infoText').append("Thank-you for donating to the ride. YDI is associated with Trinity Boston Connects (TBC).  Donations for the ride can be made through TBC and are therefore tax deductible as a donation to a 501(c)(3) organization.            <br><br> Credit Card donations are being collected through the Trinity Boston Connects website.  Clicking on the Continue button will take you to their site. <br><br><b>IMPORTANT: in the DESIGNATION section on their web donation form, click on \"Area of greatest need\" and then click on \"YDI\" to insure that the Yoga Diversity Initiative is credited with your donation.</b> <br><br>  If have any questions you can contact me at yogadiversityinitiative@gmail.com");
         $("#continueButton").show();
 
     } else if (currentDonationMode === "Check") {
       $(".infoText").empty();
-      $('.infoText').append("Thank-you for donating to the ride. YDI is building a partnership with Trinity Boston Foundation (TBF).  Donations for the ride can be made through TBF and are thereforetax deductible as a donation to a 501(c)(3) organization.  <br><br>Please make your check out to Trinity Boston Foundation. Write \"For YDI Ride\" in the memo field. You can mail your donation check to me. <br><br>  If you need my address or have any questions you can contact me at yogadiversityinitiative@gmail.com");
+      $('.infoText').append("Thank-you for donating to the ride. YDI is associated with Trinity Boston Connects (TBC).  Donations for the ride can be made through TBC and are therefore tax deductible as a donation to a 501(c)(3) organization.  <br><br>Please make your check out to Trinity Boston Connects. Write \"For YDI Ride\" in the memo field. You can mail your donation check to me. <br><br>  If you need my address or have any questions you can contact me at yogadiversityinitiative@gmail.com");
     } else {
       $(".infoText").empty();
-      $('.infoText').append("Thank-you for donating to the ride.  YDI is building a partnership with Trinity Boston Foundation (TBF).  Donations for the ride can be made through TBF and are thereforetax deductible as a donation to a 501(c)(3) organization.  <br><br>When you make your request through your giving fund make the donation to Trinity Boston Foundation. <br><br> <b>IMPORTANT: Be sure to designate that your donation is for the YDI Ride so that the Yoga Diversity Initiative is credited with your donation. </b> <br><br> If have any questions you can contact me at yogadiversityinitiative@gmail.com");
+      $('.infoText').append("Thank-you for donating to the ride.  YDI is associated with Trinity Boston Connects (TBF).  Donations for the ride can be made through TBF and are therefore tax deductible as a donation to a 501(c)(3) organization.  <br><br>When you make your request through your giving fund make the donation to Trinity Boston Connects. <br><br> <b>IMPORTANT: Be sure to designate that your donation is for the YDI Ride so that the Yoga Diversity Initiative is credited with your donation. </b> <br><br> If have any questions you can contact me at yogadiversityinitiative@gmail.com");
       };
 
     $(".infoText").show();
@@ -122,7 +122,8 @@ $(document).ready(function () {
 
   $('#continueButton').on('click',function (e){
     e.preventDefault();
-    window.location.href = "https://trinityconnects.org/donate/";
+    //window.location.href = "https://trinityconnects.org/donate/";
+    window.open("https://trinityconnects.org/donate/","_blank");
     });
 
    $('#websiteButton').on('click',function (e){
